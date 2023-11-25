@@ -14,12 +14,12 @@ namespace InventoryManagement
     public partial class CustomTextBox1 : UserControl
     {
         //Fields for controling style of textarea
-        private Color borderColor = Color.Purple;
+        private Color borderColor = Color.Gray;
         private int borderSize = 2;
         private bool underlineStyle = false;
-        private Color borderFocusColor = Color.LightPink;
+        private Color borderFocusColor = Color.LightBlue;
         private bool isFocused = false;
-        private Color borderHoverColor = Color.Red;
+        private Color borderHoverColor = Color.LightCyan;
         private bool isHovered = false;
 
         //Events
