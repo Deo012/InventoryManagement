@@ -116,7 +116,7 @@ namespace InventoryManagement
         [Category("TextBox Déo")]
         public string Texts
         {
-            get { return base.Text; } 
+            get { return textBox1.Text; } 
             set
             {
                 textBox1.Text = value;
