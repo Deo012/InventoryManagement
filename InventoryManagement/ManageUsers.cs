@@ -98,5 +98,22 @@ namespace InventoryManagement
                 populate();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ConnectionSqlString.Open();
+                SqlCommand cmd = new SqlCommand("Update UserTable set UserName = '"+UserNameBox.Texts+"', UserFullName = '"+FullNameBox.Texts+"', UserPassword = '"+PasswordBox.Texts+ "' where UserPhone = '"+TelephoneBox.Texts+"'", ConnectionSqlString);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Successfully Updated");
+                ConnectionSqlString.Close();
+                populate();
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
